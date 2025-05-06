@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 04 - Soma de 1 até N</title>
+</head>
+<body>
+  <h2>Soma de 1 até N</h2>
+  <input type="number" id="valorN" placeholder="Digite um número">
+  <button onclick="somar()">Calcular</button>
+  <p id="resultado"></p>
+  <script>
+    function somar() {
+      const n = parseInt(document.getElementById("valorN").value)
+      let soma = 0
+      for (let i = 1; i <= n; i++) soma += i
+      document.getElementById("resultado").innerText = `Soma: ${soma}`
+    }
+  </script>
+</body>
+</html>
